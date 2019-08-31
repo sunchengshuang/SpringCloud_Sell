@@ -1,5 +1,6 @@
 package com.imooc.product.controller;
 
+import com.imooc.product.DTO.CartDTO;
 import com.imooc.product.service.ProductService;
 import com.imooc.product.vo.ResultVO;
 import com.imooc.product.Utils.ResultVOUtil;
@@ -8,11 +9,11 @@ import com.imooc.product.dataobject.ProductInfo;
 import com.imooc.product.service.CategoryService;
 import com.imooc.product.vo.ProductInfoVO;
 import com.imooc.product.vo.ProductVo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,8 @@ import java.util.stream.Collectors;
 /**
  * 商品
  */
-@Controller
+@Slf4j
+@RestController
 @RequestMapping("/product")
 public class ProductController {
 
@@ -67,5 +69,17 @@ public class ProductController {
         }
 
         return ResultVOUtil.success(productVoList);
+    }
+
+    @PostMapping("/listForOrder")
+    public List<ProductInfo> listForOrder(@RequestBody List<String> productIdList){
+        log.info("调用啊成功！！！！");
+        return productService.findList(productIdList);
+    }
+
+    @PostMapping("/decreaseStock")
+    public void  decreaseStock(@RequestBody List<CartDTO> cartDTOList){
+        log.info("调用啊成功！！！！");
+         productService.decreaseStock(cartDTOList);
     }
 }
