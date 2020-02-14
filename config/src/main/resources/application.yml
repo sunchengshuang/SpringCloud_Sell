@@ -10,7 +10,7 @@ spring:
           uri: https://gitee.com/qqwwqwqwqqwwq/config-repo
           username: 17640396608
           password: My199434.
-          basedir: E:/workspace/imooc/SpringClound_Sell/config/basedir
+          basedir: D:/workspace/SpringClound_Sell/config/basedir
 eureka:
   client:
     service-url:
