@@ -14,11 +14,11 @@ spring:
         myMessage:
           group: order
           content-type: application/json   #MQ显示为json
-  rabbitmq:
-    host:  localhost
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host:  localhost
+#    port: 5672
+#    username: guest
+#    password: guest
 eureka:
   client:
     service-url:

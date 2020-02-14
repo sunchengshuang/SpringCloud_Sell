@@ -2,7 +2,8 @@ package com.imooc.order.order;
 
 import com.rabbitmq.tools.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
+// import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.support.MessageBuilder;
