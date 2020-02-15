@@ -26,6 +26,7 @@ public class productInfoReceive {
 
         // 存储到redis
         stringRedisTemplate.opsForValue().set(String.format(PRODUCT_STOCK_TEMPLATE,productInfo.getProductId()),String.valueOf(productInfo.getProductStock()));
+        System.out.println("=============================================");
     }
 
 }

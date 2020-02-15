@@ -42,5 +42,9 @@ public class MqSendTest extends  OrderApplicationTests{
         String message = "now" + new Date();
         streamClient.output().send(MessageBuilder.withPayload(message).build());
     }
+    @Test
+    public void sendOrder1(){
+        System.out.println("www");
 
+    }
 }
