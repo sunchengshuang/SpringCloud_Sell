@@ -21,7 +21,7 @@ cd $PROJ_PATH/SpringCloud_Sell/eureka # 修改
 #mvn clean install
 mvn clean package install '-Dmaven.test.skip=true'
 # 停tomcat
-#killTomcat
+killTomcat
 # 删除原有工程
 rm -rf TOMCAT_APP_PATH/webapps/ROOT
 rm -f TOMCAT_APP_PATH/webapps/ROOT.jar
