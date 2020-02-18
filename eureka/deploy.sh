@@ -21,6 +21,7 @@ killTomcat()
    fi
 }
 cd $PROJ_PATH/SpringCloud_Sell/eureka # 修改
+dos2unix deploy.sh
 mvn clean install
 
 # 停tomcat
