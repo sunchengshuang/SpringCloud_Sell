@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #编译+部署eureka站点
 #需要配置如下参数
 # 项目路径，在Excute Shell 中配置项目路径，pwd 就可以获得该项目的路径
