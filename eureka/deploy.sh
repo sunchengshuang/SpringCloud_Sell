@@ -20,7 +20,7 @@ killTomcat()
      kill -9 $pid
    fi
 }
-cd $PROJ_PATH/SpringCloud_Sell/eureka # 修改
+cd $PROJ_PATH/SpringCloud_Sell/eureka
 mvn clean install
 
 # 停tomcat
@@ -32,7 +32,7 @@ rm -f TOMCAT_APP_PATH/webapps/ROOT.war
 rm -f TOMCAT_APP_PATH/webapps/eureka.war
 
 # 复制新的工程
-cp $PROJ_PATH/SpringCloud_Sell/eureka/target/eureka.war $TOMCAT_APP_PATH/webapps/ # 修改
+cp $PROJ_PATH/SpringCloud_Sell/eureka/target/eureka.war $TOMCAT_APP_PATH/webapps/
 
 cd $TOMCAT_APP_PATH/webapps/
 mv eureka.war ROOT.war
