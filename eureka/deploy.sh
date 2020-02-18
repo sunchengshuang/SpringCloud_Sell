@@ -17,9 +17,9 @@ rm -f TOMCAT_APP_PATH/webapps/ROOT.jar
 rm -f TOMCAT_APP_PATH/webapps/eureka-0.0.1-SNAPSHOT.jar
 # 复制1新的工程
 cp $PROJ_PATH/SpringCloud_Sell/eureka/target/eureka-0.0.1-SNAPSHOT.jar $TOMCAT_APP_PATH/webapps/ # 修改
-cd $TOMCAT_APP_PATH/webapps/
+cd $TOMCAT_APP_PATH/webapps
 mv eureka-0.0.1-SNAPSHOT.jar ROOT.jar
 # 启动tomtat
-cd $TOMCAT_APP_PATH/
+cd $TOMCAT_APP_PATH
 sh bin/startup.sh
 java -jar ROOT.jar
