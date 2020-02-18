@@ -1,4 +1,3 @@
-#!/bin/bash -ilex
 #!/usr/bin/env bash
 #编译+部署eureka站点
 
