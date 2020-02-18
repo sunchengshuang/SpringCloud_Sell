@@ -22,3 +22,4 @@ mv eureka-0.0.1-SNAPSHOT.jar ROOT.jar
 # 启动tomtat
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
+java -jar ROOT.jar
