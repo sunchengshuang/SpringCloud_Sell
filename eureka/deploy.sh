@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+dos2unix /root/workspace/deployEureka/SpringCloud_Sell/eureka/deploy.sh
 #编译+部署eureka站点
 
 #需要配置如下参数
