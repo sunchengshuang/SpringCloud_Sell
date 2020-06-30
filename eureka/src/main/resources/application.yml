@@ -3,7 +3,7 @@ eureka:
     service-url:
      defaultZone: http://localhost:8761/eureka/
     register-with-eureka: false
-#  开发环境service端警告关闭 默认true
+#  开发环境service端警告关闭 默认true1111
   server:
     enable-self-preservation: false
 spring:
